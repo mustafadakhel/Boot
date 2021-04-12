@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Boot</string>
+    <string name="first_time">Hello,\nThis is your first time</string>
+    <string name="not_first_time">Hello,\nThis is not your first time</string>
+    <string name="display_all_operations">Display all operations</string>
+</resources>
