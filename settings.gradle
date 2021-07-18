@@ -1,3 +1,0 @@
-include ':boot'
-include ':app'
-rootProject.name = "Boot"
