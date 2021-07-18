@@ -1,0 +1,4 @@
+rootProject.name = "boot-sample"
+include ':app'
+include ':boot'
+findProject(":boot").projectDir = file('../')

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="not_initialized">Please use Boot.init(context) to initialize Boot before first usage</string>
+</resources>
