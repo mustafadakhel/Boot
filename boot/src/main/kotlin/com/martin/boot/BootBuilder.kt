@@ -21,16 +21,16 @@ class BootBuilder private constructor(private val operation: Operation) {
     }
 
     fun setExecuted(): BootBuilder {
-        Boot.setExecuted(operation)
+        Boot.operator.setExecuted(operation)
         return this
     }
 
-    internal fun execute(mark: Operation, block: () -> Unit): BootBuilder {
-        Boot.execute(mark, block)
+    internal fun execute(block: () -> Unit): BootBuilder {
+        Boot.operator.execute(operation, block)
         return this
     }
 
-    fun alreadyRun(operation: () -> Unit) {
+    fun alreadyExecuted(operation: () -> Unit) {
         if (alreadyExecuted)
             operation()
     }

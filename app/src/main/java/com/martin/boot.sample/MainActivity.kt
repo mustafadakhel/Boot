@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.martin.boot.runOnce
+import com.martin.boot.executeOnce
 import com.martin.sample.sample.R
 
 class MainActivity : AppCompatActivity() {
@@ -23,13 +23,13 @@ class MainActivity : AppCompatActivity() {
 
 		textView = findViewById(R.id.main_text)
 
-		runOnce("main_text") {
+		executeOnce("main_text") {
 			textView?.text = getString(com.martin.sample.sample.R.string.first_time)
-		}.alreadyRun {
+		}.alreadyExecuted {
 			textView?.text = getString(com.martin.sample.sample.R.string.not_first_time)
 		}
 
-		runOnce("secondary_operation") {
+		executeOnce("secondary_operation") {
 			//do nothing
 		}
 	}

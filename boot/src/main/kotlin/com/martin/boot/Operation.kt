@@ -3,7 +3,7 @@ package com.martin.boot
 class Operation internal constructor(val mark: String, var executed: Boolean) {
     companion object {
         internal fun fromMark(mark: String): Operation {
-            val executed = Boot.isExecuted(mark)
+            val executed = Boot.operator.isExecuted(mark)
             return Operation(mark, executed)
         }
     }
