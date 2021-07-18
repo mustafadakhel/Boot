@@ -2,7 +2,6 @@ package com.martin.boot.sample
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.martin.boot.executeOnce
@@ -11,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
 	private var textView: TextView? = null
 
-	fun launchAllOperationsActivity(view: View) {
+	fun launchAllOperationsActivity() {
 		val intent = Intent(this, OperationsActivity::class.java)
 		startActivity(intent)
 	}
