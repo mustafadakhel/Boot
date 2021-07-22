@@ -15,9 +15,8 @@ class BootBuilder private constructor(private val operation: Operation) {
         }
     }
 
-    fun isExecuted(): BootBuilder {
-        alreadyExecuted
-        return this
+    fun isExecuted(): Boolean {
+        return alreadyExecuted
     }
 
     fun setExecuted(): BootBuilder {
